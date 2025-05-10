@@ -1,0 +1,1301 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+/*/////////////////////////// nav /////////////////// */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #0b9585e1;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-top: 9px;
+  font-size: large;
+}
+nav > img {
+  width: 50px;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.callUsLink {
+  margin-left: 90px;
+}
+
+nav li,
+nav div,
+nav img {
+  cursor: pointer;
+  padding: 8px;
+}
+nav li:hover {
+  background-color: #548579;
+  border-bottom: 3px solid#7e8a87;
+}
+
+@media (min-width: 530px) and (max-width: 767px) {
+  nav {
+    width: 100%;
+    font-size: 10px;
+    justify-content: space-around;
+    padding-top: 12px;
+  }
+  .navLinks {
+    gap: 30px;
+  }
+  .callUsLink {
+    margin-left: 20px;
+  }
+
+  nav li,
+  nav div,
+  nav img {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    width: 100%;
+    font-size: 15px;
+    justify-content: space-evenly;
+    padding-top: 12px;
+  }
+  .navLinks {
+    gap: 50px;
+  }
+  .callUsLink {
+    margin-left: 70px;
+  }
+
+  nav li,
+  nav div,
+  nav img {
+    padding: 5px;
+  }
+}
+
+
+/*/////////////////////////// header /////////////////// */
+
+header {
+  padding-top: 99px;
+}
+
+.firstHeaderWithBackgourndSolarCellPic {
+  background-image: url(../img/images/solar-panels-meadow\ 1.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.firstHeaderWithBackgourndSolarCellPic > div {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  color: rgb(189, 187, 187);
+}
+
+.progressBar {
+  display: flex;
+  width: 300px;
+  height: 3px;
+  margin-top: 8px;
+}
+.progressBar div {
+  width: 45%;
+  border-radius: 5px;
+}
+
+.firstHeaderWithBackgourndSolarCellPic h1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+}
+
+.firstHeaderWithBackgourndSolarCellPic p {
+  position: absolute;
+  bottom: 27%;
+  left: 10%;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+
+.firstHeaderWithBackgourndSolarCellPic button {
+  padding: 7px;
+  border-radius: 30px;
+  border: none;
+  width: 170px;
+  position: absolute;
+  bottom: 20%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (min-width: 530px) and (max-width: 767px) {
+  header {
+    padding-top: 72px;
+  }
+  .firstHeaderWithBackgourndSolarCellPic {
+    width: 100%;
+    height: 70vh;
+  }
+  .firstHeaderWithBackgourndSolarCellPic > div {
+    width: 200px;
+  }
+  .progressBar {
+    width: 140px;
+  }
+  .progressBar div {
+    width: 100%;
+  }
+  .firstHeaderWithBackgourndSolarCellPic h1 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .firstHeaderWithBackgourndSolarCellPic p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+
+  .firstHeaderWithBackgourndSolarCellPic button {
+    padding: 7px;
+    width: 100px;
+    bottom: 20%;
+    font-size: 10px;
+  }
+  .btn2 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding-top: 79px;
+  }
+  .firstHeaderWithBackgourndSolarCellPic {
+    width: 100%;
+    height: 70vh;
+  }
+  .firstHeaderWithBackgourndSolarCellPic > div {
+    width: 200px;
+  }
+  .progressBar {
+    width: 140px;
+  }
+  .progressBar div {
+    width: 100%;
+  }
+  .firstHeaderWithBackgourndSolarCellPic h1 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .firstHeaderWithBackgourndSolarCellPic p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+
+  .firstHeaderWithBackgourndSolarCellPic button {
+    padding: 10px;
+    width: 160px;
+    bottom: 20%;
+    font-size: 13px;
+  }
+  .btn2 {
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+  .firstHeaderWithBackgourndSolarCellPic h1 {
+    font-size: 50px;
+    /* line-height: 40px; */
+  }
+  .firstHeaderWithBackgourndSolarCellPic p {
+    font-size: 15px;
+    margin-bottom: 1px;
+    line-height: 20px;
+  }
+
+  .firstHeaderWithBackgourndSolarCellPic button {
+    padding: 10px;
+    width: 160px;
+    bottom: 20%;
+    font-size: 13px;
+  }
+  .btn2 {
+    margin-left: 35%;
+  }
+}
+
+
+/*/////////////////////////// second section /////////////////// */
+
+.secondSection {
+  display: flex;
+  padding: 100px;
+}
+.SecondSectionHeader {
+  font-size: 40px;
+  font-weight: bold;
+}
+.secondSectionDescription {
+  width: 78%;
+}
+
+.rectangle30 {
+  position: relative;
+}
+
+.SecondSectionYellowRectangle {
+  position: absolute;
+  bottom: 5%;
+  /* top: 90%; */
+  right: 55%;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+}
+
+@media (min-width: 530px) and (max-width: 767px) {
+  .secondSection {
+    padding: 10%;
+  }
+  .rectangle30 {
+    height: 200px;
+  }
+  .SecondSectionHeader {
+    font-size: 14px;
+  }
+  .secondSectionDescription {
+    width: 65%;
+    font-size: 13px;
+  }
+  .rectangle30 > img {
+    width: 170px;
+  }
+
+  .SecondSectionYellowRectangle {
+    /* bottom: %; */
+    right: 50%;
+    height: 50px;
+    /* width: 70px; */
+  }
+  .secondSectionDescription h3 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .secondSection {
+    padding: 10%;
+  }
+  .rectangle30 {
+    height: 300px;
+  }
+  .SecondSectionHeader {
+    font-size: 20px;
+  }
+  .secondSectionDescription {
+    width: 65%;
+  }
+  .rectangle30 > img {
+    width: 250px;
+  }
+
+  .SecondSectionYellowRectangle {
+    /* bottom: %; */
+    right: 50%;
+    /* height: 70px;
+    width: 120px; */
+  }
+  .secondSectionDescription h3 {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+  .secondSection {
+    padding: 10%;
+  }
+  .rectangle30 {
+    height: 400px;
+  }
+  .SecondSectionHeader {
+    font-size: 24px;
+  }
+  .secondSectionDescription {
+    width: 75%;
+  }
+  .rectangle30 > img {
+    width: 350px;
+  }
+
+  .SecondSectionYellowRectangle {
+    right: 40%;
+    /* height: 120px; */
+    /* width: 100px; */
+  }
+  .secondSectionDescription h3 {
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+/*/////////////////////////// third section /////////////////// */
+.descriptionInsideThirdSection {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.descriptionInsideThirdSection h2{
+  color: white; 
+  font-size: 45px
+}
+
+.descriptionInsideThirdSection p{
+  color: white; 
+  font-size: x-large;
+  font-weight: 400
+}
+
+.thirdSection button {
+  background-color: #ffbb1c;
+  padding: 7px;
+  border-radius: 30px;
+  border: none;
+  width: 170px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 530px) and (max-width: 767px){
+  .descriptionInsideThirdSection {
+    top: 20%;
+    left: 5%;
+  }
+  .descriptionInsideThirdSection h2{
+    font-size: 13px
+  }
+  .descriptionInsideThirdSection p{
+    font-size:small;
+    font-weight: 300
+  }
+  .thirdSection button {
+    padding: 5px;
+    width: 100px;
+    font-size: 10px;
+    margin-top: 25px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+  
+  .descriptionInsideThirdSection {
+    top: 20%;
+    left: 5%;
+  }
+  .descriptionInsideThirdSection h2{
+    font-size: 18px
+  }
+  .descriptionInsideThirdSection p{
+    font-size:medium;
+    font-weight: 300
+  }
+  .thirdSection button {
+    padding: 9px;
+    width: 120px;
+    font-size: 13px;
+    margin-top: 25px;
+  }
+
+}
+
+
+
+/*/////////////////////////// card section /////////////////// */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+ 
+ 
+}
+.card {
+  background-color: rgb(242, 241, 241);
+
+  flex: 1 1 29%;
+}
+
+.card img {
+  width: 100%;
+}
+.descriptionOfCard {
+  padding: 15px;
+}
+.cardsSection p,
+.card p {
+  color: rgb(96, 94, 94);
+}
+.card a {
+  color: #3cab90;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 530px) and (max-width: 767px){
+.cardsSection>div>h2{
+
+  font-size: 10px;
+  font-weight: 300;
+}
+.cardsSection>div p {
+  
+  font-size: 8px;
+}
+
+.cards{
+  flex-direction: column;
+  
+}
+
+
+.card {
+  width: 80%;
+  margin: auto;
+}
+
+.descriptionOfCard h2{
+  font-size: medium;
+}
+
+.descriptionOfCard a{
+  font-size: 10px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+.cardsSection>div>h2{
+
+  font-size: 13px;
+  font-weight: 400;
+}
+.cardsSection>div p {
+  
+  font-size: 10px;
+}
+
+
+.card {
+  flex: 1 1 45%;
+}
+
+.descriptionOfCard h2{
+  font-size: large;
+}
+
+.descriptionOfCard a{
+  font-size: 13px;
+}
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+  
+}
+
+
+/*/////////////////////////// Repairs section  /////////////////// */
+
+.RepairsCard {
+  background-image: url(../img/images/repairs.png);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.RepairsCard div {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 800px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.732);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+}
+.RepairsCard>div>h2 {
+   font-size: 40px
+  }
+  .RepairsCard>div>p {
+   font-size: 20px
+  }
+
+@media (min-width: 530px) and (max-width: 767px){
+  .RepairsCard {
+    width: 100%;
+    height: 50vh;
+  }
+  .RepairsCard div {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 170px;
+    padding: 10px;
+  }
+  .RepairsCard>div>h2 {
+    font-size: 15px;
+  }
+  .RepairsCard>div>p {
+    font-size: 10px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+  .RepairsCard {
+    width: 100%;
+    height: 70vh;
+  }
+  .RepairsCard div {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 250px;
+    padding: 10px;
+  }
+  .RepairsCard>div>h2 {
+    font-size: 19px;
+  }
+  .RepairsCard>div>p {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1198px) {
+  .RepairsCard {
+    width: 100%;
+    height: 90vh;
+  }
+  .RepairsCard div {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+  }
+  .RepairsCard>div>h2 {
+    font-size: 22px;
+  }
+  .RepairsCard>div>p {
+    font-size: 20px;
+  }
+
+
+}
+
+
+
+/*/////////////////////////// section six  /////////////////// */
+.sectionSix {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f4f6f5;
+}
+
+.description{
+  padding: 10px
+}
+
+.FourCards {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.smallCard {
+  border: 2px solid #3cab90;
+  border-radius: 20px;
+  padding: 10px;
+  height: 350px;
+  width: 380px;
+}
+.smallCard img{
+  width: 100px
+}
+.smallCard a {
+  color: #3cab90;
+  cursor: pointer;
+}
+
+@media (min-width: 530px) and (max-width: 767px){
+  .sectionSix {
+    padding: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .description{
+    padding: 10px
+  }
+  .description img{
+    width: 50px;
+  }
+  .description h2{
+    font-size: 15px;
+  }
+  .description p{
+    font-size: 10px;
+  }
+
+  .FourCards {
+    gap: 7px;
+    grid-template-columns: 1fr;
+  }
+
+  .smallCard {
+    width: 60%;
+    height: 230px;
+    margin: auto;
+  }
+  .smallCard img{
+    width: 50px
+  }
+  .smallCard h2{
+    font-size: 13px;
+  }
+  .smallCard p{
+    font-size: 11px;
+  }
+  .smallCard a{
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+  .sectionSix {
+    padding: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .description{
+    padding: 10px
+  }
+  .description img{
+    width: 60px;
+  }
+  .description h2{
+    font-size: 20px;
+  }
+  .description p{
+    font-size: medium;
+  }
+
+  .FourCards {
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .smallCard {
+    width: 60%;
+    height: 350px;
+    margin: auto;
+  }
+  .smallCard img{
+    width: 50px
+  }
+  .smallCard h2{
+    font-size: 15px;
+  }
+  .smallCard p{
+    font-size: 13px;
+  }
+
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+  .sectionSix {
+    padding: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .description{
+    padding: 10px
+  }
+  .description img{
+    width: 70px;
+  }
+  .description h2{
+    font-size: 25px;
+  }
+  .description p{
+    font-size: large;
+  }
+
+  .FourCards {
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .smallCard {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+  }
+  
+}
+
+
+
+
+/*/////////////////////////// our values  /////////////////// */
+.valuesCard {
+  background-color: #f5f8f6;
+  border: 1px solid #3cab90;
+  border-radius: 20px;
+  height: 420px;
+  width: 400px;
+}
+.OurValues>div>h2{
+  font-size: 40px;
+  
+}
+.OurValues>div>p{
+ font-size: 20px
+  
+}
+
+ .valuesCard img{
+  width: 70px
+ }
+
+@media (min-width: 530px) and (max-width: 767px){
+
+  .valuesCard {
+  
+    width: 80%;
+    height: 280px;
+
+}
+.OurValues>div>h2{
+  font-size: 20px;
+  
+}
+.OurValues>div>p{
+ font-size: 12px
+}
+  .valuesCard img{
+    width: 40px
+  }
+  .valuesCard h2{
+    font-size: 14px;
+  }
+  .valuesCard p{
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+  .valuesCard {
+  
+    width: 80%;
+    height: 280px;
+  
+  
+}
+.OurValues>div>h2{
+  font-size: 30px;
+  
+}
+.OurValues>div>p{
+ font-size: 15px
+}
+  .valuesCard img{
+    width: 50px
+  }
+  .valuesCard h2{
+    font-size: 14px;
+  }
+  .valuesCard p{
+    font-size: 13px;
+  }
+}
+
+
+
+
+/*/////////////////////////// last section  /////////////////// */
+
+.lastSection{
+  height: 600px
+}
+
+.lastSectionDecription{
+  padding: 70px
+}
+.lastSectionDecription span{
+  font-size: xxx-large;
+   font-weight: 600
+}
+.lastSectionDecription p{
+ 
+  margin-top: 40px
+}
+.lastSectionDecription>div>svg{
+ 
+}
+
+.pagination-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.lastSection > div {
+  padding: 2%;
+  width: 96%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.cardInLastSection {
+  margin-left: 50px;
+  padding: 50px;
+  width: 70%;
+  border-radius: 20px;
+  background-color: rgb(246, 244, 244);
+}
+
+.cardInLastSection > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardPicAndNameWithArrows {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.cardPicAndNameWithArrows>div>div>span{
+  }
+
+  .cardPicAndNameWithArrows>div>div>p{
+  }
+
+
+  .arrows{
+     display: flex;
+     gap: 8px; 
+     width: 70px;
+     height: 40px
+  }
+
+  .arrow {
+  width: 45%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+@media (min-width: 530px) and (max-width: 767px){
+
+  .lastSection{
+    height: 450px
+  }
+  .lastSectionDecription{
+    padding: 10px
+  }
+  .lastSectionDecription span{
+    font-size:16px ;
+     font-weight: 300px;
+  }
+  .lastSectionDecription p{
+   font-size: 12px;
+    margin-top: 20px
+  }
+
+  .lastSectionDecription>div>svg{
+ 
+   width: 50px;
+  height: 50px;
+}
+
+.cardPicAndNameWithArrows{
+  margin-top: 40px;
+  
+}
+
+  .cardInLastSection {
+    padding: 10px;
+    width: 70%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgb(246, 244, 244);
+  }
+  .cardInLastSectionDescription>p{
+    font-size: 12px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>span{
+    font-size: 12px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>p{
+    font-size:10px;
+  }
+
+  .arrows{
+     width: 50px;
+     height: 20px
+  }
+  
+
+ 
+}
+@media (min-width: 768px) and (max-width: 991px){
+  
+  .lastSection{
+    height: 400px
+  }
+  .lastSectionDecription{
+    padding: 12px
+  }
+  .lastSectionDecription span{
+    font-size:19px ;
+     font-weight: 400px;
+  }
+  .lastSectionDecription p{
+   font-size: 16px;
+    margin-top: 20px
+  }
+
+  .lastSectionDecription>div>svg{
+ 
+   width: 80px;
+  height: 70px;
+}
+
+.cardPicAndNameWithArrows{
+  margin-top: 40px;
+  
+}
+
+  .cardInLastSection {
+    padding: 10px;
+    width: 70%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgb(246, 244, 244);
+  }
+  .cardInLastSectionDescription>p{
+    font-size: 16px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>span{
+    font-size: 15px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>p{
+    font-size:13px;
+  }
+
+  .arrows{
+     width: 50px;
+     height: 20px
+  }
+
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+  
+  
+  .lastSection{
+    height: 500px
+  }
+  .lastSectionDecription{
+    padding: 15px
+  }
+  .lastSectionDecription span{
+    font-size:22px ;
+     font-weight: 500px;
+  }
+  .lastSectionDecription p{
+   font-size: 20px;
+    margin-top: 20px
+  }
+
+  .lastSectionDecription>div>svg{
+ 
+   width: 100px;
+  height: 90px;
+}
+
+.cardPicAndNameWithArrows{
+  margin-top: 40px;
+  
+}
+
+  .cardInLastSection {
+    padding: 10px;
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(246, 244, 244);
+  }
+  .cardInLastSectionDescription>p{
+    font-size: 20px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>span{
+    font-size: 19px;
+  }
+
+  .cardPicAndNameWithArrows>div>div>p{
+    font-size:16px;
+  }
+
+  .arrows{
+     width: 90px;
+     height: 40px
+  }
+
+}
+
+
+
+
+/*/////////////////////////// footer /////////////////// */
+footer {
+  background-color: #283646;
+  height: 300px;
+  padding: 100px;
+}
+
+.firstSectionInFooter{
+  display: flex; 
+  justify-content: space-between;
+}
+.links img{
+  width: 90px
+}
+
+.link{
+  display: flex; 
+  gap: 20px;
+}
+.link a {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+}
+
+.inputWithSubscribeBtn{
+  width: 300px; position: relative
+
+}
+
+.inputWithSubscribeBtn > input {
+  background-color: #122438;
+  border: 1px solid rgb(165, 165, 165);
+  width: 294px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.inputWithSubscribeBtn > button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 140px;
+  height: 44px;
+  border-radius: 40px;
+  background-color: #ffbb1c;
+  color: white;
+  cursor: pointer;
+}
+
+.horizentalLine {
+  height: 1px;
+  background-color: rgb(143, 143, 143);
+  margin-top: 70px;
+}
+
+.copyrightLinks {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (min-width: 530px) and (max-width: 767px){
+  footer {
+    height: 350px;
+    padding: 10%;
+  }
+  .firstSectionInFooter{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .links img{
+    width: 50px
+  }
+
+  .link{
+    display: flex; 
+    gap: 10px;
+  }
+  .link a {
+    font-size: 10px;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+  }
+
+  .inputWithSubscribeBtn{
+    width: 100%;
+    position: relative
+
+   }
+
+   .inputWithSubscribeBtn > input {
+     background-color: #122438;
+     border: 1px solid rgb(165, 165, 165);
+     width: 100%;
+     height: 39px;
+     border-radius: 40px;
+   }
+
+   .inputWithSubscribeBtn > button {
+     position: absolute;
+     top: -1px;
+     right: -6px;
+     width: 140px;
+     height: 44px;
+     border-radius: 40px;
+     background-color: #ffbb1c;
+     color: white;
+     cursor: pointer;
+   }
+   .copyrightLinks{
+    flex-direction: column;
+   }
+    .copyrightLinks>div{
+      
+      font-size: 11px;
+
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+  footer {
+    margin-top: 40px;
+    height: 390px;
+    padding: 10%;
+  }
+  .firstSectionInFooter{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .links img{
+    width: 80px
+  }
+
+  .link{
+    display: flex; 
+    gap: 40px;
+  }
+  .link a {
+    font-size: 15px;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+  }
+
+  .inputWithSubscribeBtn{
+    width: 100%;
+    position: relative
+
+   }
+
+   .inputWithSubscribeBtn > input {
+     background-color: #122438;
+     border: 1px solid rgb(165, 165, 165);
+     width: 100%;
+     height: 39px;
+     border-radius: 40px;
+   }
+
+   .inputWithSubscribeBtn > button {
+     position: absolute;
+     top: -1px;
+     right: -6px;
+     width: 140px;
+     height: 44px;
+     border-radius: 40px;
+     background-color: #ffbb1c;
+     color: white;
+     cursor: pointer;
+   }
+   .copyrightLinks{
+    flex-direction: column;
+   }
+    .copyrightLinks>div{
+      
+      font-size: 14px;
+
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+ 
+  footer {
+    height: 350px;
+    margin-top: 90px;
+    padding: 10%;
+  }
+
+}
